@@ -1,7 +1,7 @@
 .search-container {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     padding: 50px;
 }
 .add-container {

@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -8,18 +8,18 @@
 :root {
   --dark-1: #000000;
   --dark-1-trans: #00000070;
-  --dark-2: #3E065F;
-  --dark-3: #700B97;
+  --dark-2: #3e065f;
+  --dark-3: #700b97;
   --dark-3-trans: #7c0ba8;
-  --dark-4: #8E05C2;
-  --dark-4-trans: #8E05C260;
+  --dark-4: #8e05c2;
+  --dark-4-trans: #8e05c260;
   --dark-5: #202020d7;
   --light-1: #ffffff;
-  --light-2: #ECB365;
+  --light-2: #ecb365;
   --light-1-trans: #e0dfdff1;
 }
 body {
-  background: linear-gradient(var(--dark-2), var(--dark-1) );
+  background: linear-gradient(var(--dark-2), var(--dark-1));
   background-attachment: fixed;
   color: var(--light-1);
   overflow-x: hidden;

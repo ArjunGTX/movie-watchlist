@@ -10,7 +10,7 @@ export const Watched = () => {
     return (
             <div className="card-container">
                 {
-                    state.watched && state.watched.map(movie => <MovieCard movie={movie} key={movie.id} type='watched'/>)
+                    state.watched.length > 0 ? state.watched.map(movie => <MovieCard movie={movie} key={movie.id} type='watched'/>) : <h2>Nothing here...</h2>
                 }
             </div>
     )

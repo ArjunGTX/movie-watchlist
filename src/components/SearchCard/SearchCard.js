@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./SearchCard.css";
 import { MovieContext } from "../../Contexts/MovieContext";
-import { addToWatchList } from "../../Actions/Actions";
+import { addToWatchList, addToWatched } from "../../Actions/Actions";
 
 export const SearchCard = ({movie}) => {
 
@@ -23,8 +23,10 @@ export const SearchCard = ({movie}) => {
       <div className="details">
         <h3 className="title">{movie.title ? movie.title : '--'}</h3>
         <small className="release-year">{movie.release_date ? movie.release_date.slice(0,4) : '-'}</small>
-
-        <button disabled={checkMovie(movie)} onClick={() => dispatch(addToWatchList(movie))} className="btn">Add To Watchlist</button>
+      <div className="btn-container">
+      <button disabled={checkMovie(movie)} onClick={() => dispatch(addToWatchList(movie))} className="btn">Add To Watchlist</button>
+        <button disabled={checkMovie(movie)} onClick={() => dispatch(addToWatched(movie))} className="btn">Add To Watched</button>
+      </div>
       </div>
     </div>
   );
