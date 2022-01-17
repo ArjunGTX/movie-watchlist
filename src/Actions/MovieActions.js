@@ -1,3 +1,5 @@
+//action creators for MovieReducer
+
 const addToWatchList = (movie) => ({
   type: "ADD_TO_WATCHLIST",
   payload: movie,

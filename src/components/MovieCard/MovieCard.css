@@ -1,63 +1,62 @@
 .movie-card {
-    position: relative;
-    height: 300px;
-    margin: 25px;
-    border-radius: 20px;
-   overflow: hidden;
-    box-shadow: 0px 0px 10px 2px var(--dark-4-trans);
-    transition: 350ms;
-
+  position: relative;
+  height: 300px;
+  margin: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 2px var(--dark-4-trans);
+  transition: 350ms;
 }
 .movie-card:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    background: linear-gradient(var(--dark-1-trans) 60%, var(--dark-3-trans) );
-    transition: 250ms;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  background: linear-gradient(var(--dark-1-trans) 60%, var(--dark-3-trans));
+  transition: 250ms;
+  opacity: 0;
 }
 .show-overlay {
-    opacity: 1;
-    transform: translateY(0%);
+  opacity: 1;
+  transform: translateY(0%);
 }
 .controls {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    color: var(--dark-5);
-    width: 100%;
-    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: var(--dark-5);
+  width: 100%;
+  text-align: center;
 }
 .controls i {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    transition: 250ms;
-    cursor: pointer;
-    color: var(--light-1-trans);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 250ms;
+  cursor: pointer;
+  color: var(--light-1-trans);
 }
 .controls i:hover {
-    background-color: var(--dark-4-trans);
-    box-shadow: 0px 0px 5px 2px var(--dark-4-trans);
+  background-color: var(--dark-4-trans);
+  box-shadow: 0px 0px 5px 2px var(--dark-4-trans);
 }
 .poster {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-@media screen and (max-width:850px) {
-    .movie-card {
-        height: 200px;
-        margin: 15px;
-    }
+@media screen and (max-width: 700px) {
+  .movie-card {
+    height: 200px;
+    margin: 15px;
+  }
 }
