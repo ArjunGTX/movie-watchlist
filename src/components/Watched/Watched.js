@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MovieCard } from "../MovieCard/MovieCard";
 import { MovieContext } from "../../Contexts/MovieContext";
 
-export const Watched = () => {
+const Watched = () => {
   const { state } = useContext(MovieContext);
   return (
     <div className="card-container">
@@ -16,3 +16,4 @@ export const Watched = () => {
     </div>
   );
 };
+export default Watched;

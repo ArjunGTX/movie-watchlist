@@ -18,13 +18,17 @@ export const MovieCard = ({ type, movie }) => {
     <div
       className="movie-card"
       onMouseLeave={() => setOverlay(false)}
-      onMouseEnter={() => setOverlay(true)}
+      onMouseOver={() => setOverlay(true)}
     >
-      <img
-        src={IMG_URL + movie.poster_path}
-        alt={movie.title ? movie.title : ""}
-        className="poster"
-      />
+      {movie.poster_path ? (
+        <img
+          src={IMG_URL + movie.poster_path}
+          alt={movie.title}
+          className="poster"
+        />
+      ) : (
+        <h4 className="alt-text">{movie.title}</h4>
+      )}
       <div className={overlay ? "overlay show-overlay" : "overlay"}>
         <div className="controls">
           {type === "watchList" && (

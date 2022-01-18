@@ -3,7 +3,7 @@ import "./WatchList.css";
 import { MovieCard } from "../MovieCard/MovieCard";
 import { MovieContext } from "../../Contexts/MovieContext";
 
-export const WatchList = () => {
+const WatchList = () => {
   const { state } = useContext(MovieContext);
   return (
     <div className="card-container">
@@ -17,3 +17,4 @@ export const WatchList = () => {
     </div>
   );
 };
+export default WatchList;

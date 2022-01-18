@@ -5,7 +5,7 @@ import axios from "axios";
 import { useDebounce } from "../../Hooks/useDebounce";
 import { API_KEY, BASE_URL } from "../../Constants/Constants";
 
-export const Search = () => {
+const Search = () => {
   const [movies, setMovies] = useState([]);
   const [query, setQuery] = useState("");
 
@@ -51,3 +51,5 @@ export const Search = () => {
     </main>
   );
 };
+
+export default Search;
